@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <title>My Dynamic Details Page</title>
+   
+   <script t
+   ype="text/javascript">
+   
+   function displayInput ()//Function will display a blue version of input.
+   {
+   var testInput = document.getElementById("name").value;
+   
+   if (testInput.length ==0)
+   {//Its good to use white space like indents.
+     document.getElementById("para").innerHTML = "Hey, you didnt type anything!"
+	}
+	else
+	document.getElementById("para").innerHTML = testInput;
+	}
+	
+	</script>
+</head>
+
+<body>
+  
+<H1 style="color:blue;">Lets see a button</H1>
+
+<input id="name" type="text"/>
+
+<button onclick="displayInput ();">Color It</button>
+	
+<p id="para" style="Color:blue;"></p>	
